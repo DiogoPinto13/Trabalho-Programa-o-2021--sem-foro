@@ -40,7 +40,7 @@ void menu(int *flagBot) {
         } else if (opcao == 4) {
             exit(0);
         } else
-            printf("\nDigite uma opcao invalida!\n");
+            printf("\nDigite uma opcao valida!\n");
     }
 
 }
