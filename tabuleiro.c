@@ -19,16 +19,16 @@ char **criaTab(int linhas, int colunas){
     tab = malloc(sizeof(char *)*linhas);   //cria o array inicial que vai conter ponteiros para outros arrays (cada linha)
 
     if(tab == NULL){
-        printf("erro na criacao do tabuleiro!!!!\n");
+        printf("Erro na criacao do tabuleiro!!!!\n");
         exit(0);
     }
 
     for(i = 0; i<linhas; i++){
         tab[i] = malloc(sizeof(char)*colunas);   //mete em cada posicao do array um ponteiro para cada linha
         if(tab[i] == NULL){
-            printf("erro  na criacao do tabuleiro!!!\n");
+            printf("Erro  na criacao do tabuleiro!!!\n");
             free(tab);
-            //os outrtos...
+            //os outros...
             exit(0);
         }
     }
@@ -50,7 +50,7 @@ char **adicionaLinha(char **tab, int *linhas, int *colunas){
     aux = realloc(tab, sizeof(char *)*(*linhas));   //array com ponteiros aumenta uma unidade
 
     if(aux == NULL){
-        printf("erro na alocacao de memoria!\n");
+        printf("Erro na alocacao de memoria!\n");
         exit(0);
     }
     tab = aux;
@@ -58,7 +58,7 @@ char **adicionaLinha(char **tab, int *linhas, int *colunas){
     aux[((*linhas)-1)] = malloc(sizeof(char)*(*colunas));    //aloca a nova linha
 
     if(aux == NULL){
-        printf("erro na alocacao de memoria!\n");
+        printf("Erro na alocacao de memoria!\n");
         exit(0);
     }
     tab = aux;
@@ -208,7 +208,7 @@ void jogada(char **tab, int linhas, int colunas, char *caracter, char pedra, int
                         printf("\nJa nao podes colocar nenhuma peca aqui!\n");
                     }
                     else{
-                        printf("\nnao podes colocar uma peca nessa casa!\n");
+                        printf("\nNao podes colocar uma peca nessa casa!\n");
                     }
                 }
             }
