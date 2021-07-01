@@ -132,7 +132,7 @@ int main(){
                     exit(0);
                 }
                 else{
-                    printf("\nIntroduza uma opcao invalida!!\n");
+                    printf("\nIntroduza uma opcao valida!!\n");
                 }
 
             }while(lin > linhas && col > colunas);

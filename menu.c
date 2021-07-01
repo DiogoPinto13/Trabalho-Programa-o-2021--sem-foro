@@ -24,7 +24,7 @@ void menu(int *flagBot) {
     printf("1- Single player\n");
     printf("2- Multiplayer\n");
     printf("3- Recuperar dados do ultimo jogo\n");
-    printf("4- sair\n");
+    printf("4- Sair\n");
 
     while(1) {
         printf("Digite uma opcao:");
@@ -40,7 +40,7 @@ void menu(int *flagBot) {
         } else if (opcao == 4) {
             exit(0);
         } else
-            printf("\nDigite uma opcao invalida!\n");
+            printf("\nDigite uma opcao valida!\n");
     }
 
 }
